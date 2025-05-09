@@ -1,0 +1,48 @@
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+
+}
+
+.logo img {
+  height: 23px;
+  width: auto;
+  margin-right: 15%;
+  margin-top: 10px;
+}
+
+.nav-li ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-li li a {
+  text-decoration: none;
+  color: hsl(233, 8%, 62%);
+  padding: 10px 25px;
+  display: block;
+  border-radius: 16px;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+}
+
+.nav-li li a:hover {
+  background-color: #f0f0f0;
+}
+
+
+.nav-li li:last-child a {
+  background-color: hsl(199, 65%, 51%);
+  color: white;
+  border-radius: 35px;
+  padding: 8px 25px;
+  margin-left: 160px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-li li:last-child a:hover {
+  background-color: hsl(199, 65%, 40%);
+}
