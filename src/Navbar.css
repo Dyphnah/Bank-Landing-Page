@@ -4,14 +4,17 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+  margin-left: 11%;
+  margin-right: 14%;
 
 }
 
 .logo img {
   height: 23px;
   width: auto;
-  margin-right: 15%;
+  margin-right: 100px;
   margin-top: 10px;
+
 }
 
 .nav-li ul {
@@ -39,7 +42,7 @@
   color: white;
   border-radius: 35px;
   padding: 8px 25px;
-  margin-left: 160px;
+  margin-left: 100px;
   transition: background-color 0.3s ease;
 }
 
