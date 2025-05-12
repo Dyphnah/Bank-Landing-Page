@@ -1,7 +1,13 @@
 import BgImage from './assets/images/bg-intro-desktop.svg';
 import MockUps from './assets/images/image-mockups.png';
+import ApiIcon from './assets/images/icon-api.svg';
+import BudgetingIcon from './assets/images/icon-budgeting.svg';
+import Onboarding from './assets/images/icon-onboarding.svg';
+import IconOnline from './assets/images/icon-online.svg';
+
 import Blog from './Blog';
 import './Home.css';
+
 
 function Home() {
     
@@ -31,22 +37,22 @@ function Home() {
                 </div>
                 <div className='card-container'>
                     <div className='card'>
-                        <img src="" alt="" />
+                    <img src={IconOnline} alt="Online-Banking" />
                         <h3>Online Banking</h3>
                         <p>Banking Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
                     </div>
                     <div className='card'>
-                        <img src="" alt="" />
+                        <img src={BudgetingIcon} alt="budgeting" />
                         <h3>Simple Budgeting </h3>
                         <p>See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits.</p>
                     </div>
                     <div className='card'>
-                        <img src="" alt="" />
+                        <img src={Onboarding} alt="Onboarding Icon" />
                         <h3>Fast Onboarding</h3>
                         <p>We don’t do branches. Open your account in minutes online and start taking control of your finances right away.</p>
                     </div>
                     <div className='card'>
-                        <img src="" alt="" />
+                        <img src={ApiIcon} alt="banking api" />
                         <h3>Open API</h3>
                         <p>Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.</p>
                     </div> 

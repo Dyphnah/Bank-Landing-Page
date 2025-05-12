@@ -1,0 +1,31 @@
+ .blog-section {
+    margin-left: 11%;
+    margin-right: 11%;
+  } 
+  
+  .articles-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    flex-wrap: wrap; 
+  }
+  
+  p{
+    font-size: 16px;
+  }
+  .articles {
+    flex: 1;
+    min-width: 220px;
+    max-width: 350px;
+    border-radius: 8px;
+    text-align: left;
+    background-color: #fff; 
+
+  }
+  .articles img {
+    width: 100%;
+    height: 220px;
+    display: block;
+    border-radius: 6px;
+  }
+  
