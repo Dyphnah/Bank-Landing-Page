@@ -1,17 +1,18 @@
-.home-content {
+
+  .home-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     margin: 0 11%;
   }
   
   .text-content {
     flex: 1;
     max-width: 40%;
-    margin-top: -180px;
     padding: 20px 20px 30px 0;
+    z-index: 3;
   }
   
   .image-stack {
@@ -20,6 +21,7 @@
     width: 100%;
     overflow: hidden;
     height: 700px;
+    z-index: 1;
   }
   
   .bg-image {
@@ -33,45 +35,100 @@
     top: -100px;
     left: 0;
     width: 100%;
-    height: 105%;
+    height: auto;
     z-index: 2;
-
   }
-  p{
-    padding-right: 10px ;
-  }
-
-  .other-content{
+  
+  .other-content {
     background-color: hsl(220, 16%, 96%);
     padding: 7% 11%;
-    margin-top: -170px;
- 
+    margin-top: -50px;
   }
-
+  
   .card-container {
     display: flex;
-    justify-content: space-between; 
-    gap: 30px; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
     margin-top: 80px;
   }
   
   .card {
-    flex: 1; 
-    min-width: 200px; 
-    border-radius: 8px;
+    flex: 1;
+    min-width: 220px;
+    max-width: 300px;
     text-align: left;
   }
   
-
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .home-content {
+      flex-direction: column-reverse;
+      gap: 20px;
+      padding: 0 5%; 
+    }
+  
+    .text-content {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .image-stack {
+      width: 100%;
+      height: 500px;
+    }
+  
+    .mockup-image {
+      top: -60px;
+    }
+  
+    .btn {
+      width: 100%;
+      padding: 12px;
+    }
+  
+    .card-container {
       flex-direction: column;
       align-items: center;
     }
   
-    .text-content,
-    .image-stack {
+    .card {
       max-width: 100%;
+    }
+  
+    .other-content {
+      margin-top: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .home-content {
+      padding: 0 10%; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home-content {
+      padding: 0 5%; 
+    }
+  
+    .mockup-image {
+      top: -20px;
+    }
+  
+    .image-stack {
+      height: 300px;
+    }
+  
+    .text-content h1 {
+      font-size: 25px;
+    }
+  
+    .text-content p {
+      font-size: 15px;
+    }
+  
+    .other-content {
+      margin-top: 0;
     }
   }
   

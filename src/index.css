@@ -12,10 +12,28 @@ body{
   
 
 }
+h1, h2, h3{
+  
+  font-weight: 300;
+  color: hsl(233, 26%, 24%);
+}
+
 h1{
   font-size: 2.8em;
+}
+
+h2{
+  font-size: 2em;
+}
+
+h3:hover{
+  color: hsl(136, 65%, 51%);
+  cursor: pointer;
+}
+
+h6{
   font-weight: 200;
-  color: hsl(233, 26%, 24%);
+  color: hsl(233, 8%, 62%);
 }
 
 p{

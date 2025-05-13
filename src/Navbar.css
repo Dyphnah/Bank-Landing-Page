@@ -1,25 +1,23 @@
-
 .nav-items {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  margin-left: 11%;
-  margin-right: 14%;
-
+  margin: 0 11%;
+  position: relative;
+  margin-bottom: 25px;
 }
 
 .logo img {
   height: 23px;
   width: auto;
-  margin-right: 100px;
   margin-top: 10px;
-
 }
 
 .nav-li ul {
   display: flex;
   list-style: none;
+  gap: 10px;
 }
 
 .nav-li li a {
@@ -36,7 +34,6 @@
   background-color: #f0f0f0;
 }
 
-
 .nav-li li:last-child a {
   background-color: hsl(199, 65%, 51%);
   color: white;
@@ -48,4 +45,52 @@
 
 .nav-li li:last-child a:hover {
   background-color: hsl(199, 65%, 40%);
+}
+
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-icon img {
+  width: 30px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .hamburger-icon {
+    display: block;
+  }
+
+  .nav-li {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: white;
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+
+  .nav-li.open {
+    display: block;
+  }
+
+  .nav-li ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .nav-li li {
+    margin: 0;
+  }
+
+  .nav-li li:last-child a {
+    margin-left: 0;
+  }
 }
