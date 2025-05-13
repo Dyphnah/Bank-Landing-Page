@@ -10,8 +10,8 @@ body{
   font-size: 18px;
   font-family: "Public Sans", sans-serif;
   
-
 }
+
 h1, h2, h3{
   
   font-weight: 300;
@@ -39,13 +39,14 @@ h6{
 p{
   color: hsl(233, 8%, 62%);
   line-height: 1.8;
+  
 }
 
 .btn{
-  background-color: hsl(199, 65%, 51%);
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(199, 65%, 40%));
   color: white;
   border-radius: 35px;
-  padding: 16px 45px;
+  padding: 20px 45px;
   transition: background-color 0.3s ease;
   border: 0cap;
   margin-top: 15px;

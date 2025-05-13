@@ -11,13 +11,13 @@
 .logo img {
   height: 23px;
   width: auto;
-  margin-top: 10px;
+  margin-top: 4px;
 }
 
 .nav-li ul {
   display: flex;
   list-style: none;
-  gap: 10px;
+  gap: 5px;
 }
 
 .nav-li li a {
@@ -27,25 +27,24 @@
   display: block;
   border-radius: 16px;
   transition: background-color 0.3s ease;
-  font-size: 18px;
+ 
 }
 
 .nav-li li a:hover {
-  background-color: #f0f0f0;
+  background-color: hsl(233, 26%, 24%);
+  color: white;
 }
 
 .nav-li li:last-child a {
-  background-color: hsl(199, 65%, 51%);
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(199, 65%, 40%));
   color: white;
   border-radius: 35px;
-  padding: 8px 25px;
+  padding: 8px 35px;
   margin-left: 100px;
   transition: background-color 0.3s ease;
-}
-
-.nav-li li:last-child a:hover {
-  background-color: hsl(199, 65%, 40%);
-}
+  font-size: medium;
+  margin-top: 0;
+} 
 
 .hamburger-icon {
   display: none;
